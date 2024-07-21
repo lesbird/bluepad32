@@ -12,9 +12,12 @@
 
 // Unijoysticle v2: Through-hole version
 static const struct uni_platform_unijoysticle_gpio_config gpio_config_2 = {
-    .port_a = {GPIO_NUM_26, GPIO_NUM_18, GPIO_NUM_19, GPIO_NUM_23, GPIO_NUM_14, GPIO_NUM_33, GPIO_NUM_16},
-    .port_b = {GPIO_NUM_27, GPIO_NUM_25, GPIO_NUM_32, GPIO_NUM_17, GPIO_NUM_12, -1, -1},
-    .leds = {GPIO_NUM_5, GPIO_NUM_13, -1},
+//    .port_a = {GPIO_NUM_26, GPIO_NUM_18, GPIO_NUM_19, GPIO_NUM_23, GPIO_NUM_14, GPIO_NUM_33, GPIO_NUM_16},
+//    .port_b = {GPIO_NUM_27, GPIO_NUM_25, GPIO_NUM_32, GPIO_NUM_17, GPIO_NUM_12, -1, -1},
+//    .leds = {GPIO_NUM_5, GPIO_NUM_13, -1},
+    .port_a = {GPIO_NUM_26, GPIO_NUM_18, GPIO_NUM_19, GPIO_NUM_23, GPIO_NUM_14, GPIO_NUM_33, -1},
+    .port_b = {GPIO_NUM_27, GPIO_NUM_25, GPIO_NUM_32, GPIO_NUM_17, GPIO_NUM_12, GPIO_NUM_16, -1},
+    .leds = {GPIO_NUM_2, -1, -1},
     .push_buttons = {{
                          .gpio = GPIO_NUM_10,
                          .callback = uni_platform_unijoysticle_on_push_button_mode_pressed,
